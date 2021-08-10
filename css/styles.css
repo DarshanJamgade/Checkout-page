@@ -1,0 +1,367 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0 12px;
+    font-family: 'Montserrat', sans-serif;
+    background: #FFFFFF;
+    color: #333333;
+}
+
+header h1{
+    font-weight: 600;
+    font-size: 24px;
+    color: #4E5150;
+
+    margin-top: 32px;
+    margin-left: 6px;
+}
+
+section.main {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+section.main .checkout-cart{
+    background: #F2F2F2;
+    padding: 25px;
+    border-radius: 12px;
+
+    margin-top: 2.5rem;
+
+    max-width: 24rem;
+    max-height: 35rem;
+}
+
+section.main .checkout-cart .items {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: flex-end;
+}
+
+section.main .checkout-cart .items .image{
+    width: 7.5rem;
+    margin-right: 1.25rem;
+}
+
+section.main .checkout-cart .items .image img {
+    width: 100%;
+    border-radius: 13px;
+}
+
+section.main .checkout-cart .items .item-name {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #4E5150;
+}
+
+section.main .checkout-cart .items .price{
+    display: flex;
+    align-items: center;
+}
+
+section.main .checkout-cart .items .discount-price {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F2994A;
+    margin-right: 0.75rem;
+}
+
+section.main .checkout-cart .items .orignal-price {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    text-decoration-line: line-through;
+
+    color: #4E5150;
+}
+
+section.main .checkout-cart .items .qty {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 7.5rem;
+
+    margin-top: 1.75rem;
+    padding: 0.2rem;
+    border: 1px solid #828282;
+    border-radius: 12px;
+}
+
+section.main .checkout-cart .items .qty button {
+    width: 1.25em;
+    height: 1.25em;
+
+    background: #E0E0E0;
+    border-radius: 4px; 
+    border: none;
+
+    color: #828282;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transform: scale(1);
+}
+
+
+section.main .checkout-cart .items .qty button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
+
+section.main .checkout-cart .items .qty button:active{
+    transform: scale(1);
+}
+
+section.main .checkout-cart .bill {
+    margin-top: 5.5rem;
+}
+
+section.main .checkout-cart .bill hr{
+    color:#BDBDBD;
+}
+
+section.main .checkout-cart .bill div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+ 
+/***********************************************************/
+section.main .checkout-info {
+    max-width: 465px;
+}
+
+section.main .checkout-info h2{
+    margin-top: 2.5rem;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+section.main .checkout-info form > div:not(.country){
+    border: 1px solid #828282;
+    border-radius: 12px;
+
+    padding: 0.75rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+section.main .checkout-info form > div.focus:not(.country){
+    border: 1px solid #F2994A;
+}
+
+
+section.main .checkout-info form img {
+    width: 1.2em;
+    margin-right: 0.75rem;
+}
+
+section.main .checkout-info form input {
+    all: unset;
+    font-size: 12px;
+    color: #828282;
+    width: 100%;
+}
+
+section.main .checkout-info form label {
+    font-weight: 600;
+    font-size: 10px;
+    color: #4F4F4F;
+}
+
+section.main .checkout-info form .country {
+    display: flex;
+}
+
+section.main .checkout-info form .country .form-control {
+    /* background: none;
+    border: none; */
+    all: unset;
+    font-weight: 600;
+    font-size: 10px;
+    color: #828282;
+}
+
+section.main .checkout-info form .country  div{
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+section.main .checkout-info form .country  div > div{
+    border: 1px solid #828282;
+    border-radius: 12px;
+
+    padding: 0.75rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: row;
+    margin-right: 5%;
+}
+
+section.main .checkout-info form .country  div > div.focus{
+    border: 1px solid #F2994A;
+}
+
+section.main .save {
+    margin: 1rem 0;
+    font-weight: 600;
+    font-size: 10px;
+    color: #4F4F4F;
+    display: flex;
+    align-items: center;
+}
+
+section.main .save input{
+    width: 16px;
+    height: 16px;
+    margin-right: 0.5rem;
+}
+
+
+section.main .continue {
+    margin: 2rem 0.25rem;
+
+    display: flex;
+    justify-content: right;
+}
+
+
+section.main .continue button{
+
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+    width: 166px;
+    height: 54px;
+    background: #F2994A;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    transition: background 300ms ease;
+}
+
+section.main .continue button:hover{
+    color: #F2994A;
+    background: white;
+    border: 1px solid #F2994A;
+    cursor: pointer;
+
+}
+
+section.main .continue button:active{
+    border: 2px solid #F2994A;
+}
+
+
+/************************************************************/
+
+@media (min-width: 824px){
+    section.main {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1024px){
+    body{
+        padding: 0 7rem;
+    }
+
+    header h1 {
+        margin-top: 64px;
+        font-size: 36px;
+        margin-left: 0;
+    }
+
+    section.main .checkout-cart{
+        margin-top: 3rem;
+    }
+
+    section.main .checkout-cart .items .image{
+        width: 7.8rem;
+    }
+    section.main .checkout-cart .items .item-name {
+        font-size: 16px;
+    }
+
+        
+    section.main .checkout-cart .items .discount-price {
+        font-size: 16px;
+    }
+
+    section.main .checkout-cart .items .orignal-price {
+        font-size: 12px;
+    }
+
+    section.main .checkout-cart .items .qty {
+        font-size: 16px;
+    }
+
+    section.main .checkout-cart .bill div{
+        font-size: 18px;
+    }
+    section.main .checkout-info h2{
+        margin-top: 3rem;
+        font-size: 18px;
+    }
+    section.main .checkout-info form img {
+        width: 1.25em;
+    }
+    section.main .checkout-info form input {
+        font-size: 16px;
+    }
+    section.main .checkout-info form label {
+        font-size: 12px;
+    }
+    section.main .checkout-info form .country .form-control {
+        font-size: 14px;
+    }
+    section.main .save {
+        font-size: 12px;
+    }
+    section.main .save input{
+        width: 21px;
+        height: 21px;
+    }
+
+}
+
+@media (min-width: 1440px){
+    body{
+        padding: 0 15rem;
+    }
+}
+
+
+
+
+
+
+
+
+
